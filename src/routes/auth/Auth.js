@@ -7,9 +7,11 @@ import Login from '../../pages/Auth/Login';
 const Auth = () => {
 	const { path } = useRouteMatch();
 	return (
-		<Switch>
-			<Route path={`${path}/login`} component={Login} />
-		</Switch>
+		<div>
+			<Switch>
+				<Route path={`${path}/login`} component={Login} />
+			</Switch>
+		</div>
 	);
 };
 
