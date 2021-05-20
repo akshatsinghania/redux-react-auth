@@ -16,7 +16,7 @@ const Routes = () => {
 			<div>
 				<Navbar />
 				<Switch>
-					<Route exact path={'/auth'} component={Auth} />
+					<Route path={'/auth'} component={Auth} />
 					<Route exact path={['/', '/home']} component={Home} />
 					<Route path={'*'}>
 						<h1>404 not found</h1>
